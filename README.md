@@ -1,1 +1,5 @@
-# interior_point_methods
+# Interior Point Methods
+
+For decades the Simplex algorithm was the only competitive method for linear optimization. One of the major shortcomings of the Simplex algorithm is that the number of steps required to solve the problem can grow exponentially with the size of the linear system. So for large linear programs, the Simplex algorithm is too computationally expensive to be a viable optimization method. Interior Point methods offer an alternative approach and enjoy much better theoretical convergence properties.
+
+In this repository I implement both linear and quadratic interior point methods and use KKT conditions to account for constraints. In the `interior_point_linear.ipynb` notebook, I implement a linear interior point method to compare linear and least absolute deviation regressions. In the `interior_point_quadratic.ipynb` notebook, I adjust my interior point method to account for quadratic objective functions and use it to study elastic membranes for circus tents and Markowitz Portfolio Optimization. 
